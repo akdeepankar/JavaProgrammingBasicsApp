@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/text"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="163dp" />
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/text2"
+        android:layout_marginBottom="11dp"
+        android:gravity="center"
+        android:text="JAVA \nPROGRAMMING"
+        android:textColor="#801336"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/text3"
+        android:layout_marginBottom="316dp"
+        android:gravity="center_horizontal"
+        android:text="Learn Basics of JAVA"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="43dp"
+        android:gravity="center_horizontal"
+        android:text="Developed by AK"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".JavaBasics">
+
+    <Space
+        android:id="@+id/spacer"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spacer"
+        android:layout_marginTop="-9dp"
+        android:layout_marginBottom="11dp"
+        android:gravity="center"
+        android:text="JAVA PROGRAMMING"
+        android:textColor="#801336"
+        android:textSize="30sp" />
+
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/divider"
+        android:layout_marginBottom="-11dp"
+        android:gravity="center"
+        android:text="BASICS"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/text"
+        android:layout_marginTop="12dp"
+        android:background="@android:color/white" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_above="@+id/text2"
+        android:layout_below="@+id/divider"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="-3dp" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider"
+        android:layout_marginTop="4dp"
+        android:gravity="left"
+        android:text="   WHY TO LEARN JAVA ?"
+        android:textColor="#801336"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Java is Most Popular Programming language \n for Android Smartphone Applications and is \n also among the most favored for the development \n of edge devices and the Internet of Things."
+        android:textSize="12dp"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/text2"/>
+
+    <ImageButton
+        android:id="@+id/button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/divider3"
+        android:layout_below="@id/divider"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="21dp"
+        android:layout_toEndOf="@+id/text3"
+        android:layout_toRightOf="@+id/text3"
+        android:background="#000000"
+        android:src="@mipmap/about"
+        android:textColor="#801336" />
+
+
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/text3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/white" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/divider3"
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="470dp"/>
+
+
+
+</RelativeLayout>

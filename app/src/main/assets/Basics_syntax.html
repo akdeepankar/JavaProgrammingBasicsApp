@@ -1,0 +1,257 @@
+<p style="color: #000000; font-family: Arial,Verdana,Tahoma; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; padding: 0px; margin: 0.5em 0.2em 0.6em 0.2em;"><span style="font-size: 28px;"><strong><span style="text-align: center; color: #800000; text-transform: none; line-height: 24px; text-indent: 0px; letter-spacing: normal; font-family: Arial,Verdana,Tahoma; font-style: normal; font-variant: normal; text-decoration: none; word-spacing: 0px; display: inline !important; white-space: normal; orphans: 2; float: none; -webkit-text-stroke-width: 0px; background-color: #ffffff;">Basics Syntax</span></strong></span></p>
+<p style="color: #000000; font-family: Arial,Verdana,Tahoma; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; padding: 0px; margin: 0.5em 0.2em 0.6em 0.2em;">&nbsp;</p>
+<p>When we consider a Java program, it can be defined as a collection of objects that communicate via invoking each other's methods. Let us now briefly look into what do class, object, methods, and instance variables mean.</p>
+<ul class="list">
+<li>
+<p><strong>Object</strong> &minus; Objects have states and behaviors. Example: A dog has states - color, name, breed as well as behavior such as wagging their tail, barking, eating. An object is an instance of a class.</p>
+</li>
+<li>
+<p><strong>Class</strong> &minus; A class can be defined as a template/blueprint that describes the behavior/state that the object of its type supports.</p>
+</li>
+<li>
+<p><strong>Methods</strong> &minus; A method is basically a behavior. A class can contain many methods. It is in methods where the logics are written, data is manipulated and all the actions are executed.</p>
+</li>
+<li>
+<p><strong>Instance Variables</strong> &minus; Each object has its unique set of instance variables. An object's state is created by the values assigned to these instance variables.</p>
+</li>
+</ul>
+<h2>First Java Program</h2>
+<p>Let us look at a simple code that will print the words <strong><em>Hello World</em></strong>.</p>
+<h3>Example</h3>
+<pre class="prettyprint notranslate prettyprinted"><span class="kwd">public</span> <span class="kwd">class</span> <span class="typ">MyFirstJavaProgram</span> <span class="pun">{</span>
+
+   <span class="com">/* This is my first java program.
+    * This will print 'Hello World' as the output
+    */</span>
+
+   <span class="kwd">public</span> <span class="kwd">static</span> <span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span> <span class="pun">[]</span><span class="pln">args</span><span class="pun">)</span> <span class="pun">{</span>
+      <span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Hello World"</span><span class="pun">);</span> <span class="com">// prints Hello World</span>
+   <span class="pun">}</span>
+<span class="pun">}</span></pre>
+<p>Let's look at how to save the file, compile, and run the program. Please follow the subsequent steps &minus;</p>
+<ul class="list">
+<li>
+<p>Open notepad and add the code as above.</p>
+</li>
+<li>
+<p>Save the file as: MyFirstJavaProgram.java.</p>
+</li>
+<li>
+<p>Open a command prompt window and go to the directory where you saved the class. Assume it's C:\.</p>
+</li>
+<li>
+<p>Type 'javac MyFirstJavaProgram.java' and press enter to compile your code. If there are no errors in your code, the command prompt will take you to the next line (Assumption : The path variable is set).</p>
+</li>
+<li>
+<p>Now, type ' java MyFirstJavaProgram ' to run your program.</p>
+</li>
+<li>
+<p>You will be able to see ' Hello World ' printed on the window.</p>
+</li>
+</ul>
+<h3>Output</h3>
+<pre class="result notranslate">C:\&gt; javac MyFirstJavaProgram.java
+C:\&gt; java MyFirstJavaProgram 
+Hello World
+</pre>
+<h2>Basic Syntax</h2>
+<p>About Java programs, it is very important to keep in mind the following points.</p>
+<ul class="list">
+<li>
+<p><strong>Case Sensitivity</strong> &minus; Java is case sensitive, which means identifier <strong>Hello</strong> and <strong>hello</strong> would have different meaning in Java.</p>
+</li>
+<li>
+<p><strong>Class Names</strong> &minus; For all class names the first letter should be in Upper Case. If several words are used to form a name of the class, each inner word's first letter should be in Upper Case.</p>
+<p><strong>Example:</strong> <em>class MyFirstJavaClass</em></p>
+</li>
+<li>
+<p><strong>Method Names</strong> &minus; All method names should start with a Lower Case letter. If several words are used to form the name of the method, then each inner word's first letter should be in Upper Case.</p>
+<p><strong>Example:</strong> <em>public void myMethodName()</em></p>
+</li>
+<li>
+<p><strong>Program File Name</strong> &minus; Name of the program file should exactly match the class name.</p>
+<p>When saving the file, you should save it using the class name (Remember Java is case sensitive) and append '.java' to the end of the name (if the file name and the class name do not match, your program will not compile).</p>
+<p>But please make a note that in case you do not have a public class present in the file then file name can be different than class name. It is also not mandatory to have a public class in the file.</p>
+<p><strong>Example:</strong> Assume 'MyFirstJavaProgram' is the class name. Then the file should be saved as <em>'MyFirstJavaProgram.java'</em></p>
+</li>
+<li>
+<p><strong>public static void main(String args[])</strong> &minus; Java program processing starts from the main() method which is a mandatory part of every Java program.</p>
+</li>
+</ul>
+<h2>Java Identifiers</h2>
+<p>All Java components require names. Names used for classes, variables, and methods are called <strong>identifiers</strong>.</p>
+<p>In Java, there are several points to remember about identifiers. They are as follows &minus;</p>
+<ul class="list">
+<li>
+<p>All identifiers should begin with a letter (A to Z or a to z), currency character ($) or an underscore (_).</p>
+</li>
+<li>
+<p>After the first character, identifiers can have any combination of characters.</p>
+</li>
+<li>
+<p>A key word cannot be used as an identifier.</p>
+</li>
+<li>
+<p>Most importantly, identifiers are case sensitive.</p>
+</li>
+<li>
+<p>Examples of legal identifiers: age, $salary, _value, __1_value.</p>
+</li>
+<li>
+<p>Examples of illegal identifiers: 123abc, -salary.</p>
+</li>
+</ul>
+<h2>Java Modifiers</h2>
+<p>Like other languages, it is possible to modify classes, methods, etc., by using modifiers. There are two categories of modifiers &minus;</p>
+<ul class="list">
+<li>
+<p><strong>Access Modifiers</strong> &minus; default, public , protected, private</p>
+</li>
+<li>
+<p><strong>Non-access Modifiers</strong> &minus; final, abstract, strictfp</p>
+</li>
+</ul>
+<p>We will be looking into more details about modifiers in the next section.</p>
+<h2>Java Variables</h2>
+<p>Following are the types of variables in Java &minus;</p>
+<ul class="list">
+<li>Local Variables</li>
+<li>Class Variables (Static Variables)</li>
+<li>Instance Variables (Non-static Variables)</li>
+</ul>
+<h2>Java Arrays</h2>
+<p>Arrays are objects that store multiple variables of the same type. However, an array itself is an object on the heap. We will look into how to declare, construct, and initialize in the upcoming chapters.</p>
+<h2>Java Enums</h2>
+<p>Enums were introduced in Java 5.0. Enums restrict a variable to have one of only a few predefined values. The values in this enumerated list are called enums.</p>
+<p>With the use of enums it is possible to reduce the number of bugs in your code.</p>
+<p>For example, if we consider an application for a fresh juice shop, it would be possible to restrict the glass size to small, medium, and large. This would make sure that it would not allow anyone to order any size other than small, medium, or large.</p>
+<h3>Example</h3>
+<pre class="prettyprint notranslate prettyprinted"><span class="kwd">class</span> <span class="typ">FreshJuice</span> <span class="pun">{</span>
+   <span class="kwd">enum</span> <span class="typ">FreshJuiceSize</span><span class="pun">{</span><span class="pln"> SMALL</span><span class="pun">,</span><span class="pln"> MEDIUM</span><span class="pun">,</span><span class="pln"> LARGE </span><span class="pun">}</span>
+   <span class="typ">FreshJuiceSize</span><span class="pln"> size</span><span class="pun">;</span>
+<span class="pun">}</span>
+
+<span class="kwd">public</span> <span class="kwd">class</span> <span class="typ">FreshJuiceTest</span> <span class="pun">{</span>
+
+   <span class="kwd">public</span> <span class="kwd">static</span> <span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> args</span><span class="pun">[])</span> <span class="pun">{</span>
+      <span class="typ">FreshJuice</span><span class="pln"> juice </span><span class="pun">=</span> <span class="kwd">new</span> <span class="typ">FreshJuice</span><span class="pun">();</span><span class="pln">
+      juice</span><span class="pun">.</span><span class="pln">size </span><span class="pun">=</span> <span class="typ">FreshJuice</span><span class="pun">.</span><span class="typ">FreshJuiceSize</span><span class="pun">.</span><span class="pln">MEDIUM </span><span class="pun">;</span>
+      <span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Size: "</span> <span class="pun">+</span><span class="pln"> juice</span><span class="pun">.</span><span class="pln">size</span><span class="pun">);</span>
+   <span class="pun">}</span>
+<span class="pun">}</span></pre>
+<p>The above example will produce the following result &minus;</p>
+<h3>Output</h3>
+<pre class="result notranslate">Size: MEDIUM
+</pre>
+<p><strong>Note</strong> &minus; Enums can be declared as their own or inside a class. Methods, variables, constructors can be defined inside enums as well.</p>
+<h2>Java Keywords</h2>
+<p>The following list shows the reserved words in Java. These reserved words may not be used as constant or variable or any other identifier names.</p>
+<table class="table table-bordered" style="text-align: center;">
+<tbody>
+<tr>
+<td>abstract</td>
+<td>assert</td>
+<td>boolean</td>
+<td>break</td>
+</tr>
+<tr>
+<td>byte</td>
+<td>case</td>
+<td>catch</td>
+<td>char</td>
+</tr>
+<tr>
+<td>class</td>
+<td>const</td>
+<td>continue</td>
+<td>default</td>
+</tr>
+<tr>
+<td>do</td>
+<td>double</td>
+<td>else</td>
+<td>enum</td>
+</tr>
+<tr>
+<td>extends</td>
+<td>final</td>
+<td>finally</td>
+<td>float</td>
+</tr>
+<tr>
+<td>for</td>
+<td>goto</td>
+<td>if</td>
+<td>implements</td>
+</tr>
+<tr>
+<td>import</td>
+<td>instanceof</td>
+<td>int</td>
+<td>interface</td>
+</tr>
+<tr>
+<td>long</td>
+<td>native</td>
+<td>new</td>
+<td>package</td>
+</tr>
+<tr>
+<td>private</td>
+<td>protected</td>
+<td>public</td>
+<td>return</td>
+</tr>
+<tr>
+<td>short</td>
+<td>static</td>
+<td>strictfp</td>
+<td>super</td>
+</tr>
+<tr>
+<td>switch</td>
+<td>synchronized</td>
+<td>this</td>
+<td>throw</td>
+</tr>
+<tr>
+<td>throws</td>
+<td>transient</td>
+<td>try</td>
+<td>void</td>
+</tr>
+<tr>
+<td>volatile</td>
+<td>while</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<h2>Comments in Java</h2>
+<p>Java supports single-line and multi-line comments very similar to C and C++. All characters available inside any comment are ignored by Java compiler.</p>
+<h3>Example</h3>
+<pre class="prettyprint notranslate prettyprinted"><span class="kwd">public</span> <span class="kwd">class</span> <span class="typ">MyFirstJavaProgram</span> <span class="pun">{</span>
+
+   <span class="com">/* This is my first java program.
+    * This will print 'Hello World' as the output
+    * This is an example of multi-line comments.
+    */</span>
+
+   <span class="kwd">public</span> <span class="kwd">static</span> <span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span> <span class="pun">[]</span><span class="pln">args</span><span class="pun">)</span> <span class="pun">{</span>
+      <span class="com">// This is an example of single line comment</span>
+      <span class="com">/* This is also an example of single line comment. */</span>
+      <span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"Hello World"</span><span class="pun">);</span>
+   <span class="pun">}</span>
+<span class="pun">}</span></pre>
+<h3>Output</h3>
+<pre class="result notranslate">Hello World
+</pre>
+<h2>Using Blank Lines</h2>
+<p>A line containing only white space, possibly with a comment, is known as a blank line, and Java totally ignores it.</p>
+<h2>Inheritance</h2>
+<p>In Java, classes can be derived from classes. Basically, if you need to create a new class and here is already a class that has some of the code you require, then it is possible to derive your new class from the already existing code.</p>
+<p>This concept allows you to reuse the fields and methods of the existing class without having to rewrite the code in a new class. In this scenario, the existing class is called the <strong>superclass</strong> and the derived class is called the <strong>subclass</strong>.</p>
+<h2>Interfaces</h2>
+<p>In Java language, an interface can be defined as a contract between objects on how to communicate with each other. Interfaces play a vital role when it comes to the concept of inheritance.</p>
+<p>An interface defines the methods, a deriving class (subclass) should use. But the implementation of the methods is totally up to the subclass.</p>

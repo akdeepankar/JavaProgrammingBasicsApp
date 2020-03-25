@@ -1,0 +1,369 @@
+<p style="color: #000000; font-family: Arial,Verdana,Tahoma; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; padding: 0px; margin: 0.5em 0.2em 0.6em 0.2em;"><span style="font-size: 28px;"><strong><span style="text-align: center; color: #800000; text-transform: none; line-height: 24px; text-indent: 0px; letter-spacing: normal; font-family: Arial,Verdana,Tahoma; font-style: normal; font-variant: normal; text-decoration: none; word-spacing: 0px; display: inline !important; white-space: normal; orphans: 2; font-size-adjust: none; font-stretch: normal; float: none; -webkit-text-stroke-width: 0px; background-color: #ffffff;">Java - Strings Class</span></strong></span></p>
+<p style="color: #000000; font-family: Arial,Verdana,Tahoma; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; padding: 0px; margin: 0.5em 0.2em 0.6em 0.2em;">Strings, which are widely used in Java programming, are a sequence of characters. In Java programming language, strings are treated as objects.</p>
+<p style="color: #000000; font-family: Arial,Verdana,Tahoma; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; padding: 0px; margin: 0.5em 0.2em 0.6em 0.2em;">The Java platform provides the String class to create and manipulate strings.</p>
+<h2 style="color: rgba(0, 0, 0, 0.87); font-family: Arial,Verdana,Tahoma; font-size: 23px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 2rem; margin-bottom: 0.62rem; margin-top: 1.25rem; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;">Creating Strings</h2>
+<p style="color: #000000; font-family: Arial,Verdana,Tahoma; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; padding: 0px; margin: 0.5em 0.2em 0.6em 0.2em;">The most direct way to create a string is to write &minus;</p>
+<pre class="result notranslate" style="background-attachment: scroll; background-clip: border-box; background-color: #eeeeee; background-image: none; background-origin: padding-box; background-position-x: 0%; background-position-y: 0%; background-repeat: repeat; background-size: auto; border-image-outset: 0; border-image-repeat: stretch; border-image-slice: 100%; border-image-source: none; border-image-width: 1; color: rgba(0, 0, 0, 0.87); font-family: monospace,monospace; font-size: 0.95em; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; overflow-x: auto; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: pre; word-spacing: 0px; padding: 5px; border: 1px solid #d6d6d6;">String greeting = "Hello world!";
+</pre>
+<p style="color: #000000; font-family: Arial,Verdana,Tahoma; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; padding: 0px; margin: 0.5em 0.2em 0.6em 0.2em;">Whenever it encounters a string literal in your code, the compiler creates a String object with its value in this case, "Hello world!'.</p>
+<p style="color: #000000; font-family: Arial,Verdana,Tahoma; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; padding: 0px; margin: 0.5em 0.2em 0.6em 0.2em;">As with any other object, you can create String objects by using the new keyword and a constructor. The String class has 11 constructors that allow you to provide the initial value of the string using different sources, such as an array of characters.</p>
+<h3 style="color: rgba(0, 0, 0, 0.87); font-family: Arial,Verdana,Tahoma; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 1.75rem; margin-bottom: 0.62rem; margin-top: 1.25rem; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;">Example</h3>
+<div class="demo-view" style="color: rgba(0, 0, 0, 0.87); font-family: Arial,Verdana,Tahoma; font-size: 13.93px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; position: relative; text-align: right; text-decoration: none; text-indent: 0px; text-transform: none; top: 7px; -webkit-text-stroke-width: 0px; white-space: normal; width: 100%; word-spacing: 0px;">&nbsp;</div>
+<pre class="prettyprint notranslate prettyprinted" style="background-attachment: scroll; background-clip: border-box; background-color: #eeeeee; background-image: none; background-origin: padding-box; background-position-x: 0%; background-position-y: 0%; background-repeat: repeat; background-size: auto; border-image-outset: 0; border-image-repeat: stretch; border-image-slice: 100%; border-image-source: none; border-image-width: 1; color: rgba(0, 0, 0, 0.87); font-family: monospace,monospace; font-size: 0.95em; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; margin-top: -5px; orphans: 2; overflow-x: auto; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: pre; word-spacing: 0px; padding: 2px; border: 1px solid #888888;"><span class="kwd" style="color: #000088;">public</span> <span class="kwd" style="color: #000088;">class</span> <span class="typ" style="color: #660066;">StringDemo</span> <span class="pun" style="color: #666600;">{</span>
+
+   <span class="kwd" style="color: #000088;">public</span> <span class="kwd" style="color: #000088;">static</span> <span class="kwd" style="color: #000088;">void</span><span class="pln" style="color: #000000;"> main</span><span class="pun" style="color: #666600;">(</span><span class="typ" style="color: #660066;">String</span><span class="pln" style="color: #000000;"> args</span><span class="pun" style="color: #666600;">[])</span> <span class="pun" style="color: #666600;">{</span>
+      <span class="kwd" style="color: #000088;">char</span><span class="pun" style="color: #666600;">[]</span><span class="pln" style="color: #000000;"> helloArray </span><span class="pun" style="color: #666600;">=</span> <span class="pun" style="color: #666600;">{</span> <span class="str" style="color: #008800;">'h'</span><span class="pun" style="color: #666600;">,</span> <span class="str" style="color: #008800;">'e'</span><span class="pun" style="color: #666600;">,</span> <span class="str" style="color: #008800;">'l'</span><span class="pun" style="color: #666600;">,</span> <span class="str" style="color: #008800;">'l'</span><span class="pun" style="color: #666600;">,</span> <span class="str" style="color: #008800;">'o'</span><span class="pun" style="color: #666600;">,</span> <span class="str" style="color: #008800;">'.'</span> <span class="pun" style="color: #666600;">};</span>
+      <span class="typ" style="color: #660066;">String</span><span class="pln" style="color: #000000;"> helloString </span><span class="pun" style="color: #666600;">=</span> <span class="kwd" style="color: #000088;">new</span> <span class="typ" style="color: #660066;">String</span><span class="pun" style="color: #666600;">(</span><span class="pln" style="color: #000000;">helloArray</span><span class="pun" style="color: #666600;">);</span>  
+      <span class="typ" style="color: #660066;">System</span><span class="pun" style="color: #666600;">.</span><span class="kwd" style="color: #000088;">out</span><span class="pun" style="color: #666600;">.</span><span class="pln" style="color: #000000;">println</span><span class="pun" style="color: #666600;">(</span><span class="pln" style="color: #000000;"> helloString </span><span class="pun" style="color: #666600;">);</span>
+   <span class="pun" style="color: #666600;">}</span>
+<span class="pun" style="color: #666600;">}</span></pre>
+<p style="color: #000000; font-family: Arial,Verdana,Tahoma; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; padding: 0px; margin: 0.5em 0.2em 0.6em 0.2em;">This will produce the following result &minus;</p>
+<h3 style="color: rgba(0, 0, 0, 0.87); font-family: Arial,Verdana,Tahoma; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 1.75rem; margin-bottom: 0.62rem; margin-top: 1.25rem; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;">Output</h3>
+<pre class="result notranslate" style="background-attachment: scroll; background-clip: border-box; background-color: #eeeeee; background-image: none; background-origin: padding-box; background-position-x: 0%; background-position-y: 0%; background-repeat: repeat; background-size: auto; border-image-outset: 0; border-image-repeat: stretch; border-image-slice: 100%; border-image-source: none; border-image-width: 1; color: rgba(0, 0, 0, 0.87); font-family: monospace,monospace; font-size: 0.95em; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; overflow-x: auto; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: pre; word-spacing: 0px; padding: 5px; border: 1px solid #d6d6d6;">hello.
+</pre>
+<p style="color: #000000; font-family: Arial,Verdana,Tahoma; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; padding: 0px; margin: 0.5em 0.2em 0.6em 0.2em;"><strong style="font-weight: 640;">Note</strong> &minus; The String class is immutable, so that once it is created a String object cannot be changed. If there is a necessity to make a lot of modifications to Strings of characters, then you should use <a style="background-attachment: scroll; background-clip: border-box; background-color: transparent; background-image: url(&amp;quot; /images/link-icon.png&amp;quot;); background-origin: padding-box; background-position-x: right; background-position-y: center; background-repeat: no-repeat; background-size: auto; color: #313131; font-weight: normal; padding-bottom: 2px; padding-right: 22px; text-decoration: none;" href="https://www.tutorialspoint.com/java/java_string_buffer.htm">String Buffer &amp; String Builder</a> Classes.</p>
+<h2 style="color: rgba(0, 0, 0, 0.87); font-family: Arial,Verdana,Tahoma; font-size: 23px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 2rem; margin-bottom: 0.62rem; margin-top: 1.25rem; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;">String Length</h2>
+<p style="color: #000000; font-family: Arial,Verdana,Tahoma; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; padding: 0px; margin: 0.5em 0.2em 0.6em 0.2em;">Methods used to obtain information about an object are known as <strong style="font-weight: 640;">accessor methods</strong>. One accessor method that you can use with strings is the length() method, which returns the number of characters contained in the string object.</p>
+<p style="color: #000000; font-family: Arial,Verdana,Tahoma; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; padding: 0px; margin: 0.5em 0.2em 0.6em 0.2em;">The following program is an example of <strong style="font-weight: 640;">length()</strong>, method String class.</p>
+<h3 style="color: rgba(0, 0, 0, 0.87); font-family: Arial,Verdana,Tahoma; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 1.75rem; margin-bottom: 0.62rem; margin-top: 1.25rem; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;">Example</h3>
+<div class="demo-view" style="color: rgba(0, 0, 0, 0.87); font-family: Arial,Verdana,Tahoma; font-size: 13.93px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; position: relative; text-align: right; text-decoration: none; text-indent: 0px; text-transform: none; top: 7px; -webkit-text-stroke-width: 0px; white-space: normal; width: 100%; word-spacing: 0px;">&nbsp;</div>
+<pre class="prettyprint notranslate prettyprinted" style="background-attachment: scroll; background-clip: border-box; background-color: #eeeeee; background-image: none; background-origin: padding-box; background-position-x: 0%; background-position-y: 0%; background-repeat: repeat; background-size: auto; border-image-outset: 0; border-image-repeat: stretch; border-image-slice: 100%; border-image-source: none; border-image-width: 1; color: rgba(0, 0, 0, 0.87); font-family: monospace,monospace; font-size: 0.95em; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; margin-top: -5px; orphans: 2; overflow-x: auto; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: pre; word-spacing: 0px; padding: 2px; border: 1px solid #888888;"><span class="kwd" style="color: #000088;">public</span> <span class="kwd" style="color: #000088;">class</span> <span class="typ" style="color: #660066;">StringDemo</span> <span class="pun" style="color: #666600;">{</span>
+
+   <span class="kwd" style="color: #000088;">public</span> <span class="kwd" style="color: #000088;">static</span> <span class="kwd" style="color: #000088;">void</span><span class="pln" style="color: #000000;"> main</span><span class="pun" style="color: #666600;">(</span><span class="typ" style="color: #660066;">String</span><span class="pln" style="color: #000000;"> args</span><span class="pun" style="color: #666600;">[])</span> <span class="pun" style="color: #666600;">{</span>
+      <span class="typ" style="color: #660066;">String</span><span class="pln" style="color: #000000;"> palindrome </span><span class="pun" style="color: #666600;">=</span> <span class="str" style="color: #008800;">"Dot saw I was Tod"</span><span class="pun" style="color: #666600;">;</span>
+      <span class="kwd" style="color: #000088;">int</span><span class="pln" style="color: #000000;"> len </span><span class="pun" style="color: #666600;">=</span><span class="pln" style="color: #000000;"> palindrome</span><span class="pun" style="color: #666600;">.</span><span class="pln" style="color: #000000;">length</span><span class="pun" style="color: #666600;">();</span>
+      <span class="typ" style="color: #660066;">System</span><span class="pun" style="color: #666600;">.</span><span class="kwd" style="color: #000088;">out</span><span class="pun" style="color: #666600;">.</span><span class="pln" style="color: #000000;">println</span><span class="pun" style="color: #666600;">(</span> <span class="str" style="color: #008800;">"String Length is : "</span> <span class="pun" style="color: #666600;">+</span><span class="pln" style="color: #000000;"> len </span><span class="pun" style="color: #666600;">);</span>
+   <span class="pun" style="color: #666600;">}</span>
+<span class="pun" style="color: #666600;">}</span></pre>
+<p style="color: #000000; font-family: Arial,Verdana,Tahoma; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; padding: 0px; margin: 0.5em 0.2em 0.6em 0.2em;">This will produce the following result &minus;</p>
+<h3 style="color: rgba(0, 0, 0, 0.87); font-family: Arial,Verdana,Tahoma; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 1.75rem; margin-bottom: 0.62rem; margin-top: 1.25rem; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;">Output</h3>
+<pre class="result notranslate" style="background-attachment: scroll; background-clip: border-box; background-color: #eeeeee; background-image: none; background-origin: padding-box; background-position-x: 0%; background-position-y: 0%; background-repeat: repeat; background-size: auto; border-image-outset: 0; border-image-repeat: stretch; border-image-slice: 100%; border-image-source: none; border-image-width: 1; color: rgba(0, 0, 0, 0.87); font-family: monospace,monospace; font-size: 0.95em; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; overflow-x: auto; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: pre; word-spacing: 0px; padding: 5px; border: 1px solid #d6d6d6;">String Length is : 17
+</pre>
+<h2 style="color: rgba(0, 0, 0, 0.87); font-family: Arial,Verdana,Tahoma; font-size: 23px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 2rem; margin-bottom: 0.62rem; margin-top: 1.25rem; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;">Concatenating Strings</h2>
+<p style="color: #000000; font-family: Arial,Verdana,Tahoma; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; padding: 0px; margin: 0.5em 0.2em 0.6em 0.2em;">The String class includes a method for concatenating two strings &minus;</p>
+<pre class="result notranslate" style="background-attachment: scroll; background-clip: border-box; background-color: #eeeeee; background-image: none; background-origin: padding-box; background-position-x: 0%; background-position-y: 0%; background-repeat: repeat; background-size: auto; border-image-outset: 0; border-image-repeat: stretch; border-image-slice: 100%; border-image-source: none; border-image-width: 1; color: rgba(0, 0, 0, 0.87); font-family: monospace,monospace; font-size: 0.95em; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; overflow-x: auto; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: pre; word-spacing: 0px; padding: 5px; border: 1px solid #d6d6d6;">string1.concat(string2);
+</pre>
+<p style="color: #000000; font-family: Arial,Verdana,Tahoma; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; padding: 0px; margin: 0.5em 0.2em 0.6em 0.2em;">This returns a new string that is string1 with string2 added to it at the end. You can also use the concat() method with string literals, as in &minus;</p>
+<pre class="result notranslate" style="background-attachment: scroll; background-clip: border-box; background-color: #eeeeee; background-image: none; background-origin: padding-box; background-position-x: 0%; background-position-y: 0%; background-repeat: repeat; background-size: auto; border-image-outset: 0; border-image-repeat: stretch; border-image-slice: 100%; border-image-source: none; border-image-width: 1; color: rgba(0, 0, 0, 0.87); font-family: monospace,monospace; font-size: 0.95em; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; overflow-x: auto; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: pre; word-spacing: 0px; padding: 5px; border: 1px solid #d6d6d6;">"My name is ".concat("Zara");
+</pre>
+<p style="color: #000000; font-family: Arial,Verdana,Tahoma; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; padding: 0px; margin: 0.5em 0.2em 0.6em 0.2em;">Strings are more commonly concatenated with the + operator, as in &minus;</p>
+<pre class="result notranslate" style="background-attachment: scroll; background-clip: border-box; background-color: #eeeeee; background-image: none; background-origin: padding-box; background-position-x: 0%; background-position-y: 0%; background-repeat: repeat; background-size: auto; border-image-outset: 0; border-image-repeat: stretch; border-image-slice: 100%; border-image-source: none; border-image-width: 1; color: rgba(0, 0, 0, 0.87); font-family: monospace,monospace; font-size: 0.95em; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; overflow-x: auto; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: pre; word-spacing: 0px; padding: 5px; border: 1px solid #d6d6d6;">"Hello," + " world" + "!"
+</pre>
+<p style="color: #000000; font-family: Arial,Verdana,Tahoma; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; padding: 0px; margin: 0.5em 0.2em 0.6em 0.2em;">which results in &minus;</p>
+<pre class="result notranslate" style="background-attachment: scroll; background-clip: border-box; background-color: #eeeeee; background-image: none; background-origin: padding-box; background-position-x: 0%; background-position-y: 0%; background-repeat: repeat; background-size: auto; border-image-outset: 0; border-image-repeat: stretch; border-image-slice: 100%; border-image-source: none; border-image-width: 1; color: rgba(0, 0, 0, 0.87); font-family: monospace,monospace; font-size: 0.95em; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; overflow-x: auto; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: pre; word-spacing: 0px; padding: 5px; border: 1px solid #d6d6d6;">"Hello, world!"
+</pre>
+<p style="color: #000000; font-family: Arial,Verdana,Tahoma; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; padding: 0px; margin: 0.5em 0.2em 0.6em 0.2em;">Let us look at the following example &minus;</p>
+<h3 style="color: rgba(0, 0, 0, 0.87); font-family: Arial,Verdana,Tahoma; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 1.75rem; margin-bottom: 0.62rem; margin-top: 1.25rem; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;">Example</h3>
+<div class="demo-view" style="color: rgba(0, 0, 0, 0.87); font-family: Arial,Verdana,Tahoma; font-size: 13.93px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; position: relative; text-align: right; text-decoration: none; text-indent: 0px; text-transform: none; top: 7px; -webkit-text-stroke-width: 0px; white-space: normal; width: 100%; word-spacing: 0px;">&nbsp;</div>
+<pre class="prettyprint notranslate prettyprinted" style="background-attachment: scroll; background-clip: border-box; background-color: #eeeeee; background-image: none; background-origin: padding-box; background-position-x: 0%; background-position-y: 0%; background-repeat: repeat; background-size: auto; border-image-outset: 0; border-image-repeat: stretch; border-image-slice: 100%; border-image-source: none; border-image-width: 1; color: rgba(0, 0, 0, 0.87); font-family: monospace,monospace; font-size: 0.95em; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; margin-top: -5px; orphans: 2; overflow-x: auto; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: pre; word-spacing: 0px; padding: 2px; border: 1px solid #888888;"><span class="kwd" style="color: #000088;">public</span> <span class="kwd" style="color: #000088;">class</span> <span class="typ" style="color: #660066;">StringDemo</span> <span class="pun" style="color: #666600;">{</span>
+
+   <span class="kwd" style="color: #000088;">public</span> <span class="kwd" style="color: #000088;">static</span> <span class="kwd" style="color: #000088;">void</span><span class="pln" style="color: #000000;"> main</span><span class="pun" style="color: #666600;">(</span><span class="typ" style="color: #660066;">String</span><span class="pln" style="color: #000000;"> args</span><span class="pun" style="color: #666600;">[])</span> <span class="pun" style="color: #666600;">{</span>
+      <span class="typ" style="color: #660066;">String</span><span class="pln" style="color: #000000;"> string1 </span><span class="pun" style="color: #666600;">=</span> <span class="str" style="color: #008800;">"saw I was "</span><span class="pun" style="color: #666600;">;</span>
+      <span class="typ" style="color: #660066;">System</span><span class="pun" style="color: #666600;">.</span><span class="kwd" style="color: #000088;">out</span><span class="pun" style="color: #666600;">.</span><span class="pln" style="color: #000000;">println</span><span class="pun" style="color: #666600;">(</span><span class="str" style="color: #008800;">"Dot "</span> <span class="pun" style="color: #666600;">+</span><span class="pln" style="color: #000000;"> string1 </span><span class="pun" style="color: #666600;">+</span> <span class="str" style="color: #008800;">"Tod"</span><span class="pun" style="color: #666600;">);</span>
+   <span class="pun" style="color: #666600;">}</span>
+<span class="pun" style="color: #666600;">}</span></pre>
+<p style="color: #000000; font-family: Arial,Verdana,Tahoma; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; padding: 0px; margin: 0.5em 0.2em 0.6em 0.2em;">This will produce the following result &minus;</p>
+<h3 style="color: rgba(0, 0, 0, 0.87); font-family: Arial,Verdana,Tahoma; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 1.75rem; margin-bottom: 0.62rem; margin-top: 1.25rem; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;">Output</h3>
+<pre class="result notranslate" style="background-attachment: scroll; background-clip: border-box; background-color: #eeeeee; background-image: none; background-origin: padding-box; background-position-x: 0%; background-position-y: 0%; background-repeat: repeat; background-size: auto; border-image-outset: 0; border-image-repeat: stretch; border-image-slice: 100%; border-image-source: none; border-image-width: 1; color: rgba(0, 0, 0, 0.87); font-family: monospace,monospace; font-size: 0.95em; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; overflow-x: auto; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: pre; word-spacing: 0px; padding: 5px; border: 1px solid #d6d6d6;">Dot saw I was Tod
+</pre>
+<h2 style="color: rgba(0, 0, 0, 0.87); font-family: Arial,Verdana,Tahoma; font-size: 23px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 2rem; margin-bottom: 0.62rem; margin-top: 1.25rem; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;">Creating Format Strings</h2>
+<p style="color: #000000; font-family: Arial,Verdana,Tahoma; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; padding: 0px; margin: 0.5em 0.2em 0.6em 0.2em;">You have printf() and format() methods to print output with formatted numbers. The String class has an equivalent class method, format(), that returns a String object rather than a PrintStream object.</p>
+<p style="color: #000000; font-family: Arial,Verdana,Tahoma; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; padding: 0px; margin: 0.5em 0.2em 0.6em 0.2em;">Using String's static format() method allows you to create a formatted string that you can reuse, as opposed to a one-time print statement. For example, instead of &minus;</p>
+<h3 style="color: rgba(0, 0, 0, 0.87); font-family: Arial,Verdana,Tahoma; font-size: 18px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; line-height: 1.75rem; margin-bottom: 0.62rem; margin-top: 1.25rem; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px;">Example</h3>
+<pre class="prettyprint notranslate prettyprinted" style="background-attachment: scroll; background-clip: border-box; background-color: #eeeeee; background-image: none; background-origin: padding-box; background-position-x: 0%; background-position-y: 0%; background-repeat: repeat; background-size: auto; border-image-outset: 0; border-image-repeat: stretch; border-image-slice: 100%; border-image-source: none; border-image-width: 1; color: rgba(0, 0, 0, 0.87); font-family: monospace,monospace; font-size: 0.95em; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; margin-top: -5px; orphans: 2; overflow-x: auto; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: pre; word-spacing: 0px; padding: 2px; border: 1px solid #888888;"><span class="typ" style="color: #660066;">System</span><span class="pun" style="color: #666600;">.</span><span class="kwd" style="color: #000088;">out</span><span class="pun" style="color: #666600;">.</span><span class="pln" style="color: #000000;">printf</span><span class="pun" style="color: #666600;">(</span><span class="str" style="color: #008800;">"The value of the float variable is "</span> <span class="pun" style="color: #666600;">+</span>
+                  <span class="str" style="color: #008800;">"%f, while the value of the integer "</span> <span class="pun" style="color: #666600;">+</span>
+                  <span class="str" style="color: #008800;">"variable is %d, and the string "</span> <span class="pun" style="color: #666600;">+</span>
+                  <span class="str" style="color: #008800;">"is %s"</span><span class="pun" style="color: #666600;">,</span><span class="pln" style="color: #000000;"> floatVar</span><span class="pun" style="color: #666600;">,</span><span class="pln" style="color: #000000;"> intVar</span><span class="pun" style="color: #666600;">,</span><span class="pln" style="color: #000000;"> stringVar</span><span class="pun" style="color: #666600;">);</span></pre>
+<p style="color: #000000; font-family: Arial,Verdana,Tahoma; font-size: 15px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: justify; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; padding: 0px; margin: 0.5em 0.2em 0.6em 0.2em;">You can write &minus;</p>
+<pre class="prettyprint notranslate prettyprinted" style="background-attachment: scroll; background-clip: border-box; background-color: #eeeeee; background-image: none; background-origin: padding-box; background-position-x: 0%; background-position-y: 0%; background-repeat: repeat; background-size: auto; border-image-outset: 0; border-image-repeat: stretch; border-image-slice: 100%; border-image-source: none; border-image-width: 1; color: rgba(0, 0, 0, 0.87); font-family: monospace,monospace; font-size: 0.95em; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; margin-top: -5px; orphans: 2; overflow-x: auto; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: pre; word-spacing: 0px; padding: 2px; border: 1px solid #888888;"><span class="typ" style="color: #660066;">String</span><span class="pln" style="color: #000000;"> fs</span><span class="pun" style="color: #666600;">;</span><span class="pln" style="color: #000000;">
+fs </span><span class="pun" style="color: #666600;">=</span> <span class="typ" style="color: #660066;">String</span><span class="pun" style="color: #666600;">.</span><span class="pln" style="color: #000000;">format</span><span class="pun" style="color: #666600;">(</span><span class="str" style="color: #008800;">"The value of the float variable is "</span> <span class="pun" style="color: #666600;">+</span>
+                   <span class="str" style="color: #008800;">"%f, while the value of the integer "</span> <span class="pun" style="color: #666600;">+</span>
+                   <span class="str" style="color: #008800;">"variable is %d, and the string "</span> <span class="pun" style="color: #666600;">+</span>
+                   <span class="str" style="color: #008800;">"is %s"</span><span class="pun" style="color: #666600;">,</span><span class="pln" style="color: #000000;"> floatVar</span><span class="pun" style="color: #666600;">,</span><span class="pln" style="color: #000000;"> intVar</span><span class="pun" style="color: #666600;">,</span><span class="pln" style="color: #000000;"> stringVar</span><span class="pun" style="color: #666600;">);</span>
+<span class="typ" style="color: #660066;">System</span><span class="pun" style="color: #666600;">.</span><span class="kwd" style="color: #000088;">out</span><span class="pun" style="color: #666600;">.</span><span class="pln" style="color: #000000;">println</span><span class="pun" style="color: #666600;">(</span><span class="pln" style="color: #000000;">fs</span><span class="pun" style="color: #666600;">);</span></pre>
+<h2>String Methods</h2>
+<p>Here is the list of methods supported by String class &minus;</p>
+<table class="table table-bordered" style="width: 482px;">
+<tbody>
+<tr style="height: 18px;">
+<th style="width: 44.49px; height: 18px;">Sr.No.</th>
+<th style="width: 419.51px; height: 18px; text-align: center;">Method &amp; Description</th>
+</tr>
+<tr style="height: 64px;">
+<td class="ts" style="width: 44.49px; height: 64px;">1</td>
+<td style="width: 419.51px; height: 64px;">char charAt(int index)
+<p>Returns the character at the specified index.</p>
+</td>
+</tr>
+<tr style="height: 64px;">
+<td class="ts" style="width: 44.49px; height: 64px;">2</td>
+<td style="width: 419.51px; height: 64px;">int compareTo(Object o)
+<p>Compares this String to another Object.</p>
+</td>
+</tr>
+<tr style="height: 64px;">
+<td class="ts" style="width: 44.49px; height: 64px;">3</td>
+<td style="width: 419.51px; height: 64px;">int compareTo(String anotherString)
+<p>Compares two strings lexicographically.</p>
+</td>
+</tr>
+<tr style="height: 82px;">
+<td class="ts" style="width: 44.49px; height: 82px;">4</td>
+<td style="width: 419.51px; height: 82px;">int compareToIgnoreCase(String str)
+<p>Compares two strings lexicographically, ignoring case differences.</p>
+</td>
+</tr>
+<tr style="height: 64px;">
+<td class="ts" style="width: 44.49px; height: 64px;">5</td>
+<td style="width: 419.51px; height: 64px;">String concat(String str)
+<p>Concatenates the specified string to the end of this string.</p>
+</td>
+</tr>
+<tr style="height: 82px;">
+<td class="ts" style="width: 44.49px; height: 82px;">6</td>
+<td style="width: 419.51px; height: 82px;">boolean contentEquals(StringBuffer sb)
+<p>Returns true if and only if this String represents the same sequence of characters as the specified StringBuffer.</p>
+</td>
+</tr>
+<tr style="height: 82px;">
+<td class="ts" style="width: 44.49px; height: 82px;">7</td>
+<td style="width: 419.51px; height: 82px;">static String copyValueOf(char[] data)
+<p>Returns a String that represents the character sequence in the array specified.</p>
+</td>
+</tr>
+<tr style="height: 82px;">
+<td class="ts" style="width: 44.49px; height: 82px;">8</td>
+<td style="width: 419.51px; height: 82px;">static String copyValueOf(char[] data, int offset, int count)
+<p>Returns a String that represents the character sequence in the array specified.</p>
+</td>
+</tr>
+<tr style="height: 64px;">
+<td class="ts" style="width: 44.49px; height: 64px;">9</td>
+<td style="width: 419.51px; height: 64px;">boolean endsWith(String suffix)
+<p>Tests if this string ends with the specified suffix.</p>
+</td>
+</tr>
+<tr style="height: 64px;">
+<td class="ts" style="width: 44.49px; height: 64px;">10</td>
+<td style="width: 419.51px; height: 64px;">boolean equals(Object anObject)
+<p>Compares this string to the specified object.</p>
+</td>
+</tr>
+<tr style="height: 82px;">
+<td class="ts" style="width: 44.49px; height: 82px;">11</td>
+<td style="width: 419.51px; height: 82px;">boolean equalsIgnoreCase(String anotherString)
+<p>Compares this String to another String, ignoring case considerations.</p>
+</td>
+</tr>
+<tr style="height: 100px;">
+<td class="ts" style="width: 44.49px; height: 100px;">12</td>
+<td style="width: 419.51px; height: 100px;">byte getBytes()
+<p>Encodes this String into a sequence of bytes using the platform's default charset, storing the result into a new byte array.</p>
+</td>
+</tr>
+<tr style="height: 82px;">
+<td class="ts" style="width: 44.49px; height: 82px;">13</td>
+<td style="width: 419.51px; height: 82px;">byte[] getBytes(String charsetName)
+<p>Encodes this String into a sequence of bytes using the named charset, storing the result into a new byte array.</p>
+</td>
+</tr>
+<tr style="height: 100px;">
+<td class="ts" style="width: 44.49px; height: 100px;">14</td>
+<td style="width: 419.51px; height: 100px;">void getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin)
+<p>Copies characters from this string into the destination character array.</p>
+</td>
+</tr>
+<tr style="height: 64px;">
+<td class="ts" style="width: 44.49px; height: 64px;">15</td>
+<td style="width: 419.51px; height: 64px;">int hashCode()
+<p>Returns a hash code for this string.</p>
+</td>
+</tr>
+<tr style="height: 82px;">
+<td class="ts" style="width: 44.49px; height: 82px;">16</td>
+<td style="width: 419.51px; height: 82px;">int indexOf(int ch)
+<p>Returns the index within this string of the first occurrence of the specified character.</p>
+</td>
+</tr>
+<tr style="height: 100px;">
+<td class="ts" style="width: 44.49px; height: 100px;">17</td>
+<td style="width: 419.51px; height: 100px;">int indexOf(int ch, int fromIndex)
+<p>Returns the index within this string of the first occurrence of the specified character, starting the search at the specified index.</p>
+</td>
+</tr>
+<tr style="height: 82px;">
+<td class="ts" style="width: 44.49px; height: 82px;">18</td>
+<td style="width: 419.51px; height: 82px;">int indexOf(String str)
+<p>Returns the index within this string of the first occurrence of the specified substring.</p>
+</td>
+</tr>
+<tr style="height: 82px;">
+<td class="ts" style="width: 44.49px; height: 82px;">19</td>
+<td style="width: 419.51px; height: 82px;">int indexOf(String str, int fromIndex)
+<p>Returns the index within this string of the first occurrence of the specified substring, starting at the specified index.</p>
+</td>
+</tr>
+<tr style="height: 64px;">
+<td class="ts" style="width: 44.49px; height: 64px;">20</td>
+<td style="width: 419.51px; height: 64px;">String intern()
+<p>Returns a canonical representation for the string object.</p>
+</td>
+</tr>
+<tr style="height: 82px;">
+<td class="ts" style="width: 44.49px; height: 82px;">21</td>
+<td style="width: 419.51px; height: 82px;">int lastIndexOf(int ch)
+<p>Returns the index within this string of the last occurrence of the specified character.</p>
+</td>
+</tr>
+<tr style="height: 100px;">
+<td class="ts" style="width: 44.49px; height: 100px;">22</td>
+<td style="width: 419.51px; height: 100px;">int lastIndexOf(int ch, int fromIndex)
+<p>Returns the index within this string of the last occurrence of the specified character, searching backward starting at the specified index.</p>
+</td>
+</tr>
+<tr style="height: 192px;">
+<td class="ts" style="width: 44.49px; height: 192px;">23</td>
+<td style="width: 419.51px; height: 192px;">int lastIndexOf(String str)
+<p>Returns the index within this string of the rightmost occurrence of the specified substring.</p>
+</td>
+</tr>
+<tr style="height: 100px;">
+<td class="ts" style="width: 44.49px; height: 100px;">24</td>
+<td style="width: 419.51px; height: 100px;">int lastIndexOf(String str, int fromIndex)
+<p>Returns the index within this string of the last occurrence of the specified substring, searching backward starting at the specified index.</p>
+</td>
+</tr>
+<tr style="height: 64px;">
+<td class="ts" style="width: 44.49px; height: 64px;">25</td>
+<td style="width: 419.51px; height: 64px;">int length()
+<p>Returns the length of this string.</p>
+</td>
+</tr>
+<tr style="height: 82px;">
+<td class="ts" style="width: 44.49px; height: 82px;">26</td>
+<td style="width: 419.51px; height: 82px;">boolean matches(String regex)
+<p>Tells whether or not this string matches the given regular expression.</p>
+</td>
+</tr>
+<tr style="height: 82px;">
+<td class="ts" style="width: 44.49px; height: 82px;">27</td>
+<td style="width: 419.51px; height: 82px;">boolean regionMatches(boolean ignoreCase, int toffset, String other, int ooffset, int len)
+<p>Tests if two string regions are equal.</p>
+</td>
+</tr>
+<tr style="height: 82px;">
+<td class="ts" style="width: 44.49px; height: 82px;">28</td>
+<td style="width: 419.51px; height: 82px;">boolean regionMatches(int toffset, String other, int ooffset, int len)
+<p>Tests if two string regions are equal.</p>
+</td>
+</tr>
+<tr style="height: 82px;">
+<td class="ts" style="width: 44.49px; height: 82px;">29</td>
+<td style="width: 419.51px; height: 82px;">String replace(char oldChar, char newChar)
+<p>Returns a new string resulting from replacing all occurrences of oldChar in this string with newChar.</p>
+</td>
+</tr>
+<tr style="height: 82px;">
+<td class="ts" style="width: 44.49px; height: 82px;">30</td>
+<td style="width: 419.51px; height: 82px;">String replaceAll(String regex, String replacement
+<p>Replaces each substring of this string that matches the given regular expression with the given replacement.</p>
+</td>
+</tr>
+<tr style="height: 82px;">
+<td class="ts" style="width: 44.49px; height: 82px;">31</td>
+<td style="width: 419.51px; height: 82px;">String replaceFirst(String regex, String replacement)
+<p>Replaces the first substring of this string that matches the given regular expression with the given replacement.</p>
+</td>
+</tr>
+<tr style="height: 82px;">
+<td class="ts" style="width: 44.49px; height: 82px;">32</td>
+<td style="width: 419.51px; height: 82px;">String[] split(String regex)
+<p>Splits this string around matches of the given regular expression.</p>
+</td>
+</tr>
+<tr style="height: 82px;">
+<td class="ts" style="width: 44.49px; height: 82px;">33</td>
+<td style="width: 419.51px; height: 82px;">String[] split(String regex, int limit)
+<p>Splits this string around matches of the given regular expression.</p>
+</td>
+</tr>
+<tr style="height: 64px;">
+<td class="ts" style="width: 44.49px; height: 64px;">34</td>
+<td style="width: 419.51px; height: 64px;">boolean startsWith(String prefix)
+<p>Tests if this string starts with the specified prefix.</p>
+</td>
+</tr>
+<tr style="height: 82px;">
+<td class="ts" style="width: 44.49px; height: 82px;">35</td>
+<td style="width: 419.51px; height: 82px;">boolean startsWith(String prefix, int toffset)
+<p>Tests if this string starts with the specified prefix beginning a specified index.</p>
+</td>
+</tr>
+<tr style="height: 82px;">
+<td class="ts" style="width: 44.49px; height: 82px;">36</td>
+<td style="width: 419.51px; height: 82px;">CharSequence subSequence(int beginIndex, int endIndex)
+<p>Returns a new character sequence that is a subsequence of this sequence.</p>
+</td>
+</tr>
+<tr style="height: 64px;">
+<td class="ts" style="width: 44.49px; height: 64px;">37</td>
+<td style="width: 419.51px; height: 64px;">String substring(int beginIndex)
+<p>Returns a new string that is a substring of this string.</p>
+</td>
+</tr>
+<tr style="height: 64px;">
+<td class="ts" style="width: 44.49px; height: 64px;">38</td>
+<td style="width: 419.51px; height: 64px;">String substring(int beginIndex, int endIndex)
+<p>Returns a new string that is a substring of this string.</p>
+</td>
+</tr>
+<tr style="height: 64px;">
+<td class="ts" style="width: 44.49px; height: 64px;">39</td>
+<td style="width: 419.51px; height: 64px;">char[] toCharArray()
+<p>Converts this string to a new character array.</p>
+</td>
+</tr>
+<tr style="height: 82px;">
+<td class="ts" style="width: 44.49px; height: 82px;">40</td>
+<td style="width: 419.51px; height: 82px;">String toLowerCase()
+<p>Converts all of the characters in this String to lower case using the rules of the default locale.</p>
+</td>
+</tr>
+<tr style="height: 82px;">
+<td class="ts" style="width: 44.49px; height: 82px;">41</td>
+<td style="width: 419.51px; height: 82px;">String toLowerCase(Locale locale)
+<p>Converts all of the characters in this String to lower case using the rules of the given Locale.</p>
+</td>
+</tr>
+<tr style="height: 64px;">
+<td class="ts" style="width: 44.49px; height: 64px;">42</td>
+<td style="width: 419.51px; height: 64px;">String toString()
+<p>This object (which is already a string!) is itself returned.</p>
+</td>
+</tr>
+<tr style="height: 82px;">
+<td class="ts" style="width: 44.49px; height: 82px;">43</td>
+<td style="width: 419.51px; height: 82px;">String toUpperCase()
+<p>Converts all of the characters in this String to upper case using the rules of the default locale.</p>
+</td>
+</tr>
+<tr style="height: 82px;">
+<td class="ts" style="width: 44.49px; height: 82px;">44</td>
+<td style="width: 419.51px; height: 82px;">String toUpperCase(Locale locale)
+<p>Converts all of the characters in this String to upper case using the rules of the given Locale.</p>
+</td>
+</tr>
+<tr style="height: 82px;">
+<td class="ts" style="width: 44.49px; height: 82px;">45</td>
+<td style="width: 419.51px; height: 82px;">String trim()
+<p>Returns a copy of the string, with leading and trailing whitespace omitted.</p>
+</td>
+</tr>
+<tr style="height: 82px;">
+<td class="ts" style="width: 44.49px; height: 82px;">46</td>
+<td style="width: 419.51px; height: 82px;">static String valueOf(primitive data type x)
+<p>Returns the string representation of the passed data type argument.</p>
+</td>
+</tr>
+</tbody>
+</table>

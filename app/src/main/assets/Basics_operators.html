@@ -1,0 +1,259 @@
+<p style="box-sizing: border-box; color: #222426; font-family: &amp;quot; pt sans&amp;quot;,arial,&amp;quot;helvetica neue&amp;quot;,helvetica,sans-serif; font-size: 17px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; padding: 0px; margin: 0px 0px 26px 0px;"><span style="color: #800000; font-size: 28px;"><strong><span style="text-align: center; text-transform: none; line-height: 24px; text-indent: 0px; letter-spacing: normal; font-family: Arial,Verdana,Tahoma; font-style: normal; font-variant: normal; text-decoration: none; word-spacing: 0px; display: inline !important; white-space: normal; orphans: 2; float: none; -webkit-text-stroke-width: 0px; background-color: #ffffff;">Java - Basic Operators</span></strong></span></p>
+<p style="box-sizing: border-box; color: #222426; font-family: &amp;quot; pt sans&amp;quot;,arial,&amp;quot;helvetica neue&amp;quot;,helvetica,sans-serif; font-size: 17px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; padding: 0px; margin: 0px 0px 26px 0px;">An operator is a character that <strong style="box-sizing: border-box; font-weight: bold;">represents an action</strong>, for example + is an arithmetic operator that represents addition.</p>
+<h2 style="box-sizing: border-box; color: #444542; font-family: &amp;quot; pt sans&amp;quot;,&amp;quot;trebuchet ms&amp;quot;,&amp;quot;lucida grande&amp;quot;,arial,&amp;quot;helvetica neue&amp;quot;,helvetica,sans-serif; font-size: 26px; font-style: normal; font-variant: normal; font-weight: bold; letter-spacing: normal; line-height: 1.2; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; margin: 0px 0px 16px 0px;">Types of Operator in Java</h2>
+<p style="box-sizing: border-box; color: #222426; font-family: &amp;quot; pt sans&amp;quot;,arial,&amp;quot;helvetica neue&amp;quot;,helvetica,sans-serif; font-size: 17px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; padding: 0px; margin: 0px 0px 26px 0px;">1) Basic Arithmetic Operators<br style="box-sizing: border-box;" /> 2) Assignment Operators<br style="box-sizing: border-box;" /> 3) Auto-increment and Auto-decrement Operators<br style="box-sizing: border-box;" /> 4) Logical Operators<br style="box-sizing: border-box;" /> 5) Comparison (relational) operators<br style="box-sizing: border-box;" /> 6) Bitwise Operators<br style="box-sizing: border-box;" /> 7) Ternary Operator</p>
+<h2 style="box-sizing: border-box; color: #444542; font-family: &amp;quot; pt sans&amp;quot;,&amp;quot;trebuchet ms&amp;quot;,&amp;quot;lucida grande&amp;quot;,arial,&amp;quot;helvetica neue&amp;quot;,helvetica,sans-serif; font-size: 26px; font-style: normal; font-variant: normal; font-weight: bold; letter-spacing: normal; line-height: 1.2; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; margin: 0px 0px 16px 0px;">1) Basic Arithmetic Operators</h2>
+<p style="box-sizing: border-box; color: #222426; font-family: &amp;quot; pt sans&amp;quot;,arial,&amp;quot;helvetica neue&amp;quot;,helvetica,sans-serif; font-size: 17px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; padding: 0px; margin: 0px 0px 26px 0px;">Basic arithmetic operators are: +, -, *, /, %<br style="box-sizing: border-box;" /> <strong style="box-sizing: border-box; font-weight: bold;">+</strong> is for addition.</p>
+<p style="box-sizing: border-box; color: #222426; font-family: &amp;quot; pt sans&amp;quot;,arial,&amp;quot;helvetica neue&amp;quot;,helvetica,sans-serif; font-size: 17px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; padding: 0px; margin: 0px 0px 26px 0px;"><strong style="box-sizing: border-box; font-weight: bold;">&ndash;</strong> is for subtraction.</p>
+<p><strong>*</strong> is for multiplication.</p>
+<p><strong>/</strong> is for division.</p>
+<p><strong>%</strong> is for modulo.<br />Note: Modulo operator returns remainder, for example 10 % 5 would return 0</p>
+<h3>Example of Arithmetic Operators</h3>
+<pre class="prettyprint prettyprinted"><span class="kwd">public</span> <span class="kwd">class</span> <span class="typ">ArithmeticOperatorDemo</span> <span class="pun">{</span>
+   <span class="kwd">public</span> <span class="kwd">static</span> <span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> args</span><span class="pun">[])</span> <span class="pun">{</span>
+      <span class="kwd">int</span><span class="pln"> num1 </span><span class="pun">=</span> <span class="lit">100</span><span class="pun">;</span>
+      <span class="kwd">int</span><span class="pln"> num2 </span><span class="pun">=</span> <span class="lit">20</span><span class="pun">;</span>
+
+      <span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"num1 + num2: "</span> <span class="pun">+</span> <span class="pun">(</span><span class="pln">num1 </span><span class="pun">+</span><span class="pln"> num2</span><span class="pun">)</span> <span class="pun">);</span>
+      <span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"num1 - num2: "</span> <span class="pun">+</span> <span class="pun">(</span><span class="pln">num1 </span><span class="pun">-</span><span class="pln"> num2</span><span class="pun">)</span> <span class="pun">);</span>
+      <span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"num1 * num2: "</span> <span class="pun">+</span> <span class="pun">(</span><span class="pln">num1 </span><span class="pun">*</span><span class="pln"> num2</span><span class="pun">)</span> <span class="pun">);</span> 
+      <span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"num1 / num2: "</span> <span class="pun">+</span> <span class="pun">(</span><span class="pln">num1 </span><span class="pun">/</span><span class="pln"> num2</span><span class="pun">)</span> <span class="pun">);</span>
+      <span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"num1 % num2: "</span> <span class="pun">+</span> <span class="pun">(</span><span class="pln">num1 </span><span class="pun">%</span><span class="pln"> num2</span><span class="pun">)</span> <span class="pun">);</span>
+   <span class="pun">}</span>
+<span class="pun">}</span></pre>
+<p><strong>Output:</strong></p>
+<pre class="prettyprint prettyprinted"><span class="pln">num1 </span><span class="pun">+</span><span class="pln"> num2</span><span class="pun">:</span> <span class="lit">120</span><span class="pln">
+num1 </span><span class="pun">-</span><span class="pln"> num2</span><span class="pun">:</span> <span class="lit">80</span><span class="pln">
+num1 </span><span class="pun">*</span><span class="pln"> num2</span><span class="pun">:</span> <span class="lit">2000</span><span class="pln">
+num1 </span><span class="pun">/</span><span class="pln"> num2</span><span class="pun">:</span> <span class="lit">5</span><span class="pln">
+num1 </span><span class="pun">%</span><span class="pln"> num2</span><span class="pun">:</span> <span class="lit">0</span></pre>
+<p>&nbsp;</p>
+<h2>2) Assignment Operators</h2>
+<p>Assignments operators in java are: =, +=, -=, *=, /=, %=<br /><strong>num2 = num1</strong> would assign value of variable num1 to the variable.</p>
+<p><strong>num2+=num1</strong> is equal to num2 = num2+num1</p>
+<p><strong>num2-=num1</strong> is equal to num2 = num2-num1</p>
+<p><strong>num2*=num1</strong> is equal to num2 = num2*num1</p>
+<p><strong>num2/=num1</strong> is equal to num2 = num2/num1</p>
+<p><strong>num2%=num1</strong> is equal to num2 = num2%num1</p>
+<h3>Example of Assignment Operators</h3>
+<pre class="prettyprint prettyprinted"><span class="kwd">public</span> <span class="kwd">class</span> <span class="typ">AssignmentOperatorDemo</span> <span class="pun">{</span>
+   <span class="kwd">public</span> <span class="kwd">static</span> <span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> args</span><span class="pun">[])</span> <span class="pun">{</span>
+      <span class="kwd">int</span><span class="pln"> num1 </span><span class="pun">=</span> <span class="lit">10</span><span class="pun">;</span>
+      <span class="kwd">int</span><span class="pln"> num2 </span><span class="pun">=</span> <span class="lit">20</span><span class="pun">;</span><span class="pln">
+
+      num2 </span><span class="pun">=</span><span class="pln"> num1</span><span class="pun">;</span>
+      <span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"= Output: "</span><span class="pun">+</span><span class="pln">num2</span><span class="pun">);</span><span class="pln">
+
+      num2 </span><span class="pun">+=</span><span class="pln"> num1</span><span class="pun">;</span>
+      <span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"+= Output: "</span><span class="pun">+</span><span class="pln">num2</span><span class="pun">);</span><span class="pln">
+	      
+      num2 </span><span class="pun">-=</span><span class="pln"> num1</span><span class="pun">;</span>
+      <span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"-= Output: "</span><span class="pun">+</span><span class="pln">num2</span><span class="pun">);</span><span class="pln">
+	      
+      num2 </span><span class="pun">*=</span><span class="pln"> num1</span><span class="pun">;</span>
+      <span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"*= Output: "</span><span class="pun">+</span><span class="pln">num2</span><span class="pun">);</span><span class="pln">
+	      
+      num2 </span><span class="pun">/=</span><span class="pln"> num1</span><span class="pun">;</span>
+      <span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"/= Output: "</span><span class="pun">+</span><span class="pln">num2</span><span class="pun">);</span><span class="pln">
+	      
+      num2 </span><span class="pun">%=</span><span class="pln"> num1</span><span class="pun">;</span>
+      <span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"%= Output: "</span><span class="pun">+</span><span class="pln">num2</span><span class="pun">);</span>
+   <span class="pun">}</span>
+<span class="pun">}</span></pre>
+<p><strong>Output:</strong></p>
+<pre class="prettyprint prettyprinted"><span class="pun">=</span> <span class="typ">Output</span><span class="pun">:</span> <span class="lit">10</span>
+<span class="pun">+=</span> <span class="typ">Output</span><span class="pun">:</span> <span class="lit">20</span>
+<span class="pun">-=</span> <span class="typ">Output</span><span class="pun">:</span> <span class="lit">10</span>
+<span class="pun">*=</span> <span class="typ">Output</span><span class="pun">:</span> <span class="lit">100</span>
+<span class="pun">/=</span> <span class="typ">Output</span><span class="pun">:</span> <span class="lit">10</span>
+<span class="pun">%=</span> <span class="typ">Output</span><span class="pun">:</span> <span class="lit">0</span></pre>
+<h2>3) Auto-increment and Auto-decrement Operators</h2>
+<p>++ and &mdash;<br /><strong>num++</strong> is equivalent to <code>num=num+1;</code></p>
+<p><strong>num&ndash;-</strong> is equivalent to <code>num=num-1;</code></p>
+<h3>Example of Auto-increment and Auto-decrement Operators</h3>
+<pre class="prettyprint prettyprinted"><span class="kwd">public</span> <span class="kwd">class</span> <span class="typ">AutoOperatorDemo</span> <span class="pun">{</span>
+   <span class="kwd">public</span> <span class="kwd">static</span> <span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> args</span><span class="pun">[]){</span>
+      <span class="kwd">int</span><span class="pln"> num1</span><span class="pun">=</span><span class="lit">100</span><span class="pun">;</span>
+      <span class="kwd">int</span><span class="pln"> num2</span><span class="pun">=</span><span class="lit">200</span><span class="pun">;</span><span class="pln">
+      num1</span><span class="pun">++;</span><span class="pln">
+      num2</span><span class="pun">--;</span>
+      <span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"num1++ is: "</span><span class="pun">+</span><span class="pln">num1</span><span class="pun">);</span>
+      <span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"num2-- is: "</span><span class="pun">+</span><span class="pln">num2</span><span class="pun">);</span>
+   <span class="pun">}</span>
+<span class="pun">}</span></pre>
+<p><strong>Output:</strong></p>
+<pre class="prettyprint prettyprinted"><span class="pln">num1</span><span class="pun">++</span> <span class="kwd">is</span><span class="pun">:</span> <span class="lit">101</span><span class="pln">
+num2</span><span class="pun">--</span> <span class="kwd">is</span><span class="pun">:</span> <span class="lit">199</span></pre>
+<h2>4) Logical Operators</h2>
+<p>Logical Operators are used with binary variables. They are mainly used in conditional statements and loops for evaluating a condition.</p>
+<p>Logical operators in java are: &amp;&amp;, ||, !</p>
+<p>Let&rsquo;s say we have two boolean variables b1 and b2.</p>
+<p><strong>b1&amp;&amp;b2</strong> will return true if both b1 and b2 are true else it would return false.</p>
+<p><strong>b1||b2</strong> will return false if both b1 and b2 are false else it would return true.</p>
+<p><strong>!b1</strong> would return the opposite of b1, that means it would be true if b1 is false and it would return false if b1 is true.</p>
+<h3>Example of Logical Operators</h3>
+<pre class="prettyprint prettyprinted"><span class="kwd">public</span> <span class="kwd">class</span> <span class="typ">LogicalOperatorDemo</span> <span class="pun">{</span>
+   <span class="kwd">public</span> <span class="kwd">static</span> <span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> args</span><span class="pun">[])</span> <span class="pun">{</span>
+      <span class="kwd">boolean</span><span class="pln"> b1 </span><span class="pun">=</span> <span class="kwd">true</span><span class="pun">;</span>
+      <span class="kwd">boolean</span><span class="pln"> b2 </span><span class="pun">=</span> <span class="kwd">false</span><span class="pun">;</span>
+
+      <span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"b1 &amp;&amp; b2: "</span> <span class="pun">+</span> <span class="pun">(</span><span class="pln">b1</span><span class="pun">&amp;&amp;</span><span class="pln">b2</span><span class="pun">));</span>
+      <span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"b1 || b2: "</span> <span class="pun">+</span> <span class="pun">(</span><span class="pln">b1</span><span class="pun">||</span><span class="pln">b2</span><span class="pun">));</span>
+      <span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"!(b1 &amp;&amp; b2): "</span> <span class="pun">+</span> <span class="pun">!(</span><span class="pln">b1</span><span class="pun">&amp;&amp;</span><span class="pln">b2</span><span class="pun">));</span>
+   <span class="pun">}</span>
+<span class="pun">}</span></pre>
+<p><strong>Output:</strong></p>
+<pre class="prettyprint prettyprinted"><span class="pln">b1 </span><span class="pun">&amp;&amp;</span><span class="pln"> b2</span><span class="pun">:</span> <span class="kwd">false</span><span class="pln">
+b1 </span><span class="pun">||</span><span class="pln"> b2</span><span class="pun">:</span> <span class="kwd">true</span>
+<span class="pun">!(</span><span class="pln">b1 </span><span class="pun">&amp;&amp;</span><span class="pln"> b2</span><span class="pun">):</span> <span class="kwd">true</span></pre>
+<h2>5) Comparison(Relational) operators</h2>
+<p>We have six relational operators in Java: ==, !=, &gt;, &lt;, &gt;=, &lt;=</p>
+<p><strong>==</strong> returns true if both the left side and right side are equal</p>
+<p><strong>!=</strong> returns true if left side is not equal to the right side of operator.</p>
+<p><strong>&gt;</strong> returns true if left side is greater than right.</p>
+<p><strong>&lt;</strong> returns true if left side is less than right side.</p>
+<p><strong>&gt;=</strong> returns true if left side is greater than or equal to right side.</p>
+<p><strong>&lt;=</strong> returns true if left side is less than or equal to right side.</p>
+<h3>Example of Relational operators</h3>
+<p><strong>Note:</strong> This example is using if-else statement which is our next tutorial, if you are finding it difficult to understand then refer if-else in Java.</p>
+<pre class="prettyprint prettyprinted"><span class="kwd">public</span> <span class="kwd">class</span> <span class="typ">RelationalOperatorDemo</span> <span class="pun">{</span>
+   <span class="kwd">public</span> <span class="kwd">static</span> <span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> args</span><span class="pun">[])</span> <span class="pun">{</span>
+      <span class="kwd">int</span><span class="pln"> num1 </span><span class="pun">=</span> <span class="lit">10</span><span class="pun">;</span>
+      <span class="kwd">int</span><span class="pln"> num2 </span><span class="pun">=</span> <span class="lit">50</span><span class="pun">;</span>
+      <span class="kwd">if</span> <span class="pun">(</span><span class="pln">num1</span><span class="pun">==</span><span class="pln">num2</span><span class="pun">)</span> <span class="pun">{</span>
+	 <span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"num1 and num2 are equal"</span><span class="pun">);</span>
+      <span class="pun">}</span>
+      <span class="kwd">else</span><span class="pun">{</span>
+	 <span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"num1 and num2 are not equal"</span><span class="pun">);</span>
+      <span class="pun">}</span>
+
+      <span class="kwd">if</span><span class="pun">(</span><span class="pln"> num1 </span><span class="pun">!=</span><span class="pln"> num2 </span><span class="pun">){</span>
+	 <span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"num1 and num2 are not equal"</span><span class="pun">);</span>
+      <span class="pun">}</span>
+      <span class="kwd">else</span><span class="pun">{</span>
+	 <span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"num1 and num2 are equal"</span><span class="pun">);</span>
+      <span class="pun">}</span>
+
+      <span class="kwd">if</span><span class="pun">(</span><span class="pln"> num1 </span><span class="pun">&gt;</span><span class="pln"> num2 </span><span class="pun">){</span>
+	 <span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"num1 is greater than num2"</span><span class="pun">);</span>
+      <span class="pun">}</span>
+      <span class="kwd">else</span><span class="pun">{</span>
+	 <span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"num1 is not greater than num2"</span><span class="pun">);</span>
+      <span class="pun">}</span>
+
+      <span class="kwd">if</span><span class="pun">(</span><span class="pln"> num1 </span><span class="pun">&gt;=</span><span class="pln"> num2 </span><span class="pun">){</span>
+	 <span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"num1 is greater than or equal to num2"</span><span class="pun">);</span>
+      <span class="pun">}</span>
+      <span class="kwd">else</span><span class="pun">{</span>
+	 <span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"num1 is less than num2"</span><span class="pun">);</span>
+      <span class="pun">}</span>
+
+      <span class="kwd">if</span><span class="pun">(</span><span class="pln"> num1 </span><span class="pun">&lt;</span><span class="pln"> num2 </span><span class="pun">){</span>
+	 <span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"num1 is less than num2"</span><span class="pun">);</span>
+      <span class="pun">}</span>
+      <span class="kwd">else</span><span class="pun">{</span>
+	 <span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"num1 is not less than num2"</span><span class="pun">);</span>
+      <span class="pun">}</span>
+
+      <span class="kwd">if</span><span class="pun">(</span><span class="pln"> num1 </span><span class="pun">&lt;=</span><span class="pln"> num2</span><span class="pun">){</span>
+	 <span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"num1 is less than or equal to num2"</span><span class="pun">);</span>
+      <span class="pun">}</span>
+      <span class="kwd">else</span><span class="pun">{</span>
+	 <span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"num1 is greater than num2"</span><span class="pun">);</span>
+      <span class="pun">}</span>
+   <span class="pun">}</span>
+}</pre>
+<p style="box-sizing: border-box; color: #222426; font-family: &amp;quot; pt sans&amp;quot;,arial,&amp;quot;helvetica neue&amp;quot;,helvetica,sans-serif; font-size: 17px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; padding: 0px; margin: 0px 0px 26px 0px;"><strong style="box-sizing: border-box; font-weight: bold;">Output:</strong></p>
+<pre class="prettyprint prettyprinted" style="background-color: #eeeeee; box-sizing: border-box; clear: both; color: #222426; font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; overflow: auto; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: pre; word-spacing: 0px; padding: 2px;"><span class="pln" style="box-sizing: border-box; color: #000000;">num1 </span><span class="kwd" style="box-sizing: border-box; color: #00008b;">and</span><span class="pln" style="box-sizing: border-box; color: #000000;"> num2 are </span><span class="kwd" style="box-sizing: border-box; color: #00008b;">not</span><span class="pln" style="box-sizing: border-box; color: #000000;"> equal
+num1 </span><span class="kwd" style="box-sizing: border-box; color: #00008b;">and</span><span class="pln" style="box-sizing: border-box; color: #000000;"> num2 are </span><span class="kwd" style="box-sizing: border-box; color: #00008b;">not</span><span class="pln" style="box-sizing: border-box; color: #000000;"> equal
+num1 </span><span class="kwd" style="box-sizing: border-box; color: #00008b;">is</span> <span class="kwd" style="box-sizing: border-box; color: #00008b;">not</span><span class="pln" style="box-sizing: border-box; color: #000000;"> greater than num2
+num1 </span><span class="kwd" style="box-sizing: border-box; color: #00008b;">is</span><span class="pln" style="box-sizing: border-box; color: #000000;"> less than num2
+num1 </span><span class="kwd" style="box-sizing: border-box; color: #00008b;">is</span><span class="pln" style="box-sizing: border-box; color: #000000;"> less than num2
+num1 </span><span class="kwd" style="box-sizing: border-box; color: #00008b;">is</span><span class="pln" style="box-sizing: border-box; color: #000000;"> less than </span><span class="kwd" style="box-sizing: border-box; color: #00008b;">or</span><span class="pln" style="box-sizing: border-box; color: #000000;"> equal to num2</span></pre>
+<p style="box-sizing: border-box; color: #222426; font-family: &amp;quot; pt sans&amp;quot;,arial,&amp;quot;helvetica neue&amp;quot;,helvetica,sans-serif; font-size: 17px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; padding: 0px; margin: 0px 0px 26px 0px;">Check out these related java programs related to relational operators.</p>
+<h2 style="box-sizing: border-box; color: #444542; font-family: &amp;quot; pt sans&amp;quot;,&amp;quot;trebuchet ms&amp;quot;,&amp;quot;lucida grande&amp;quot;,arial,&amp;quot;helvetica neue&amp;quot;,helvetica,sans-serif; font-size: 26px; font-style: normal; font-variant: normal; font-weight: bold; letter-spacing: normal; line-height: 1.2; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; margin: 0px 0px 16px 0px;">6) Bitwise Operators</h2>
+<p style="box-sizing: border-box; color: #222426; font-family: &amp;quot; pt sans&amp;quot;,arial,&amp;quot;helvetica neue&amp;quot;,helvetica,sans-serif; font-size: 17px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; padding: 0px; margin: 0px 0px 26px 0px;">There are six bitwise Operators: &amp;, |, ^, ~, &lt;&lt;, &gt;&gt;</p>
+<p style="box-sizing: border-box; color: #222426; font-family: &amp;quot; pt sans&amp;quot;,arial,&amp;quot;helvetica neue&amp;quot;,helvetica,sans-serif; font-size: 17px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; padding: 0px; margin: 0px 0px 26px 0px;">num1 = 11; /* equal to 00001011*/<br style="box-sizing: border-box;" /> num2 = 22; /* equal to 00010110 */</p>
+<p style="box-sizing: border-box; color: #222426; font-family: &amp;quot; pt sans&amp;quot;,arial,&amp;quot;helvetica neue&amp;quot;,helvetica,sans-serif; font-size: 17px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; padding: 0px; margin: 0px 0px 26px 0px;">Bitwise operator performs bit by bit processing.</p>
+<p style="box-sizing: border-box; color: #222426; font-family: &amp;quot; pt sans&amp;quot;,arial,&amp;quot;helvetica neue&amp;quot;,helvetica,sans-serif; font-size: 17px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; padding: 0px; margin: 0px 0px 26px 0px;"><strong>num1 &amp; num2</strong> compares corresponding bits of num1 and num2 and generates 1 if both bits are equal, else it returns 0. In our case it would return: 2 which is 00000010 because in the binary form of num1 and num2 only second last bits are matching.</p>
+<p><strong>num1 | num2</strong> compares corresponding bits of num1 and num2 and generates 1 if either bit is 1, else it returns 0. In our case it would return 31 which is 00011111</p>
+<p><strong>num1 ^ num2</strong> compares corresponding bits of num1 and num2 and generates 1 if they are not equal, else it returns 0. In our example it would return 29 which is equivalent to 00011101</p>
+<p><strong>~num1</strong> is a complement operator that just changes the bit from 0 to 1 and 1 to 0. In our example it would return -12 which is signed 8 bit equivalent to 11110100</p>
+<p><strong>num1 &lt;&lt; 2</strong> is left shift operator that moves the bits to the left, discards the far left bit, and assigns the rightmost bit a value of 0. In our case output is 44 which is equivalent to 00101100</p>
+<blockquote>
+<p>Note: In the example below we are providing 2 at the right side of this shift operator that is the reason bits are moving two places to the left side. We can change this number and bits would be moved by the number of bits specified on the right side of the operator. Same applies to the right side operator.</p>
+</blockquote>
+<p><strong>num1 &gt;&gt; 2</strong> is right shift operator that moves the bits to the right, discards the far right bit, and assigns the leftmost bit a value of 0. In our case output is 2 which is equivalent to 00000010</p>
+<h3>Example of Bitwise Operators</h3>
+<pre class="prettyprint prettyprinted"><span class="kwd">public</span> <span class="kwd">class</span> <span class="typ">BitwiseOperatorDemo</span> <span class="pun">{</span>
+  <span class="kwd">public</span> <span class="kwd">static</span> <span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> args</span><span class="pun">[])</span> <span class="pun">{</span>
+
+     <span class="kwd">int</span><span class="pln"> num1 </span><span class="pun">=</span> <span class="lit">11</span><span class="pun">;</span>  <span class="com">/* 11 = 00001011 */</span>
+     <span class="kwd">int</span><span class="pln"> num2 </span><span class="pun">=</span> <span class="lit">22</span><span class="pun">;</span>  <span class="com">/* 22 = 00010110 */</span>
+     <span class="kwd">int</span><span class="pln"> result </span><span class="pun">=</span> <span class="lit">0</span><span class="pun">;</span><span class="pln">
+
+     result </span><span class="pun">=</span><span class="pln"> num1 </span><span class="pun">&amp;</span><span class="pln"> num2</span><span class="pun">;</span>   
+     <span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"num1 &amp; num2: "</span><span class="pun">+</span><span class="pln">result</span><span class="pun">);</span><span class="pln">
+
+     result </span><span class="pun">=</span><span class="pln"> num1 </span><span class="pun">|</span><span class="pln"> num2</span><span class="pun">;</span>   
+     <span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"num1 | num2: "</span><span class="pun">+</span><span class="pln">result</span><span class="pun">);</span><span class="pln">
+    
+     result </span><span class="pun">=</span><span class="pln"> num1 </span><span class="pun">^</span><span class="pln"> num2</span><span class="pun">;</span>   
+     <span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"num1 ^ num2: "</span><span class="pun">+</span><span class="pln">result</span><span class="pun">);</span><span class="pln">
+    
+     result </span><span class="pun">=</span> <span class="pun">~</span><span class="pln">num1</span><span class="pun">;</span>   
+     <span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"~num1: "</span><span class="pun">+</span><span class="pln">result</span><span class="pun">);</span><span class="pln">
+    
+     result </span><span class="pun">=</span><span class="pln"> num1 </span><span class="pun">&lt;&lt;</span> <span class="lit">2</span><span class="pun">;</span>   
+     <span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"num1 &lt;&lt; 2: "</span><span class="pun">+</span><span class="pln">result</span><span class="pun">);</span><span class="pln"> result </span><span class="pun">=</span><span class="pln"> num1 </span><span class="pun">&gt;&gt;</span> <span class="lit">2</span><span class="pun">;</span>   
+     <span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span><span class="str">"num1 &gt;&gt; 2: "</span><span class="pun">+</span><span class="pln">result</span><span class="pun">);</span>
+  <span class="pun">}</span>
+<span class="pun">}</span></pre>
+<p><strong>Output:</strong></p>
+<pre class="prettyprint prettyprinted"><span class="pln">num1 </span><span class="pun">&amp;</span><span class="pln"> num2</span><span class="pun">:</span> <span class="lit">2</span><span class="pln">
+num1 </span><span class="pun">|</span><span class="pln"> num2</span><span class="pun">:</span> <span class="lit">31</span><span class="pln">
+num1 </span><span class="pun">^</span><span class="pln"> num2</span><span class="pun">:</span> <span class="lit">29</span>
+<span class="pun">~</span><span class="pln">num1</span><span class="pun">:</span> <span class="pun">-</span><span class="lit">12</span><span class="pln">
+num1 </span><span class="pun">&lt;&lt;</span> <span class="lit">2</span><span class="pun">:</span> <span class="lit">44</span><span class="pln"> num1 </span><span class="pun">&gt;&gt;</span> <span class="lit">2</span><span class="pun">:</span> <span class="lit">2</span></pre>
+<h2>7) Ternary Operator</h2>
+<p>This operator evaluates a boolean expression and assign the value based on the result.<br /><strong>Syntax:</strong></p>
+<pre class="prettyprint prettyprinted"><span class="pln">variable num1 </span><span class="pun">=</span> <span class="pun">(</span><span class="pln">expression</span><span class="pun">)</span> <span class="pun">?</span><span class="pln"> value </span><span class="kwd">if</span> <span class="kwd">true</span> <span class="pun">:</span><span class="pln"> value </span><span class="kwd">if</span> <span class="kwd">false</span></pre>
+<p>If the expression results true then the first value before the colon (:) is assigned to the variable num1 else the second value is assigned to the num1.</p>
+<h3>Example of Ternary Operator</h3>
+<pre class="prettyprint prettyprinted"><span class="kwd">public</span> <span class="kwd">class</span> <span class="typ">TernaryOperatorDemo</span> <span class="pun">{</span>
+
+   <span class="kwd">public</span> <span class="kwd">static</span> <span class="kwd">void</span><span class="pln"> main</span><span class="pun">(</span><span class="typ">String</span><span class="pln"> args</span><span class="pun">[])</span> <span class="pun">{</span>
+        <span class="kwd">int</span><span class="pln"> num1</span><span class="pun">,</span><span class="pln"> num2</span><span class="pun">;</span><span class="pln">
+        num1 </span><span class="pun">=</span> <span class="lit">25</span><span class="pun">;</span>
+        <span class="com">/* num1 is not equal to 10 that's why
+	 * the second value after colon is assigned
+	 * to the variable num2
+	 */</span><span class="pln">
+	num2 </span><span class="pun">=</span> <span class="pun">(</span><span class="pln">num1 </span><span class="pun">==</span> <span class="lit">10</span><span class="pun">)</span> <span class="pun">?</span> <span class="lit">100</span><span class="pun">:</span> <span class="lit">200</span><span class="pun">;</span>
+	<span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span> <span class="str">"num2: "</span><span class="pun">+</span><span class="pln">num2</span><span class="pun">);</span>
+
+	<span class="com">/* num1 is equal to 25 that's why
+	 * the first value is assigned
+	 * to the variable num2
+	 */</span><span class="pln">
+	num2 </span><span class="pun">=</span> <span class="pun">(</span><span class="pln">num1 </span><span class="pun">==</span> <span class="lit">25</span><span class="pun">)</span> <span class="pun">?</span> <span class="lit">100</span><span class="pun">:</span> <span class="lit">200</span><span class="pun">;</span>
+	<span class="typ">System</span><span class="pun">.</span><span class="kwd">out</span><span class="pun">.</span><span class="pln">println</span><span class="pun">(</span> <span class="str">"num2: "</span><span class="pun">+</span><span class="pln">num2</span><span class="pun">);</span>
+   <span class="pun">}</span>
+<span class="pun">}</span></pre>
+<p><strong>Output:</strong></p>
+<pre class="prettyprint prettyprinted"><span class="pln">num2</span><span class="pun">:</span> <span class="lit">200</span><span class="pln">
+num2</span><span class="pun">:</span> <span class="lit">100</span></pre>
+<h2>Operator Precedence in Java</h2>
+<p>This determines which operator needs to be evaluated first if an expression has more than one operator. Operator with higher precedence at the top and lower precedence at the bottom.<br />Unary Operators<br /><strong>++ &nbsp;&ndash; &ndash; &nbsp;! &nbsp;~</strong></p>
+<p>Multiplicative<br /><strong>* &nbsp;/ %</strong></p>
+<p>Additive<br /><strong>+ &nbsp;&ndash;</strong></p>
+<p>Shift<br /><strong>&lt;&lt; &nbsp;&gt;&gt; &nbsp;&gt;&gt;&gt;</strong></p>
+<p>Relational<br /><strong>&gt; &nbsp;&gt;= &nbsp;&lt; &nbsp;&lt;=</strong></p>
+<p>Equality<br /><strong>== &nbsp;!=</strong></p>
+<p>Bitwise AND<br /><strong>&amp;</strong></p>
+<p>Bitwise XOR<br /><strong>^</strong></p>
+<p>Bitwise OR<br /><strong>|</strong></p>
+<p>Logical AND<br /><strong>&amp;&amp;</strong></p>
+<p style="box-sizing: border-box; color: #222426; font-family: &amp;quot; pt sans&amp;quot;,arial,&amp;quot;helvetica neue&amp;quot;,helvetica,sans-serif; font-size: 17px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; padding: 0px; margin: 0px 0px 26px 0px;">Logical OR<br style="box-sizing: border-box;" /> <strong style="box-sizing: border-box; font-weight: bold;">||</strong></p>
+<p style="box-sizing: border-box; color: #222426; font-family: &amp;quot; pt sans&amp;quot;,arial,&amp;quot;helvetica neue&amp;quot;,helvetica,sans-serif; font-size: 17px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; padding: 0px; margin: 0px 0px 26px 0px;">Ternary<br style="box-sizing: border-box;" /> <strong style="box-sizing: border-box; font-weight: bold;">?:</strong></p>
+<p style="box-sizing: border-box; color: #222426; font-family: &amp;quot; pt sans&amp;quot;,arial,&amp;quot;helvetica neue&amp;quot;,helvetica,sans-serif; font-size: 17px; font-style: normal; font-variant: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-decoration: none; text-indent: 0px; text-transform: none; -webkit-text-stroke-width: 0px; white-space: normal; word-spacing: 0px; padding: 0px; margin: 0px 0px 26px 0px;">Assignment<br style="box-sizing: border-box;" /> <strong style="box-sizing: border-box; font-weight: bold;">= &nbsp;+= &nbsp;-= &nbsp;*= &nbsp;/= &nbsp;%= &nbsp;&gt; &nbsp;&gt;= &nbsp;&lt; &nbsp;&lt;= &nbsp;&amp;= &nbsp;^= &nbsp;|=</strong></p>
